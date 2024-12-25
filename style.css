@@ -1,0 +1,181 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+header {
+    background: linear-gradient(90deg, #0052cc, #00aaff);
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: #0052cc;
+    text-decoration: none;
+    margin: 0 1.5em;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+.hero img {
+    max-width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.hero-text {
+    max-width: 50%;
+}
+.hero-text h2 {
+    font-size: 2rem;
+    color: #0052cc;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #555;
+}
+.hero-text button {
+    margin-top: 1.5rem;
+    padding: 0.8em 2em;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.hero-text button:hover {
+    background-color: #0052cc;
+}
+.services {
+    background: #fff;
+    padding: 2em 1em;
+    text-align: center;
+}
+.services h2 {
+    color: #0052cc;
+}
+.services .service-item {
+    display: inline-block;
+    width: 22%;
+    margin: 1em;
+    background: #f7f9fc;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.services .service-item:hover {
+    transform: scale(1.05);
+}
+.services .service-item img {
+    width: 50%;
+}
+.services .service-item h3 {
+    margin-top: 1em;
+    color: #0052cc;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+.language-switcher {
+    margin-top: 2em;
+    text-align: center;
+}
+.language-switcher button {
+    margin: 0 0.5em;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #00aaff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+.language-switcher button:hover {
+    background-color: #0052cc;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hide modals by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure modals are on top */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.modal-content h2 {
+    color: #0052cc;
+    font-size: 1.8rem;
+}
+
+.modal-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modal-content li {
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

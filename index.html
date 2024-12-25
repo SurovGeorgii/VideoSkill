@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Skill</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>VideoSkill</h1>
+        <p>Master Video Editing and Thumbnails with Ease</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Your Creative Journey Starts Here</h2>
+            <p>Join VideoSkill for expert video editing services and tutorials. Transform your ideas into stunning visuals today!</p>
+            <button onclick="about">Get Started</button>
+        </div>
+        <img src="journeyStart.png" alt="Creative Studio">
+    </div>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-item" onclick="openModal('video-editing')">
+            <img src="Editing (2).png" alt="Video Editing">
+            <h3>Video Editing</h3>
+            <p>Professional, high-quality editing tailored to your needs.</p>
+        </div>
+        <div class="service-item" onclick="openModal('thumbnail-design')">
+            <img src="YouTube.png" alt="Thumbnail Design">
+            <h3>Thumbnail Design</h3>
+            <p>Eye-catching thumbnails to boost your content visibility.</p>
+        </div>
+        <div class="service-item" onclick="openModal('editing-tutorials')">
+            <img src="Editing Tutorial.png" alt="Editing Tutorials">
+            <h3>Editing Tutorials</h3>
+            <p>Learn video editing techniques from beginner to advanced levels.</p>
+        </div>
+        <div class="service-item" onclick="openModal('thumbnail-workshops')">
+            <img src="Thumbnail TUtorial.png" alt="Thumbnail Workshops">
+            <h3>Thumbnail Tutorial</h3>
+            <p>Master the art of creating captivating thumbnails.</p>
+        </div>
+    </section>
+
+    <!-- Modals for each service -->
+    <div id="video-editing-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('video-editing')">&times;</span>
+            <h2>Video Editing</h2>
+            <p>Learn the art of professional video editing, tailored to your needs.</p>
+            <h3>Pricing Plans</h3>
+            <ul>
+                <li><strong>Basic:</strong> €10 - Basic editing techniques</li>
+                <li><strong>Pro:</strong> €25 - Advanced editing techniques</li>
+                <li><strong>Premium:</strong> €40 - Full-service video editing</li>
+            </ul>
+            <h3>What You'll Learn:</h3>
+            <ul>
+                <li>How to cut and trim videos</li>
+                <li>Adding transitions and effects</li>
+                <li>Advanced color grading</li>
+                <li>Creating professional sound design</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="thumbnail-design-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('thumbnail-design')">&times;</span>
+            <h2>Thumbnail Design</h2>
+            <p>Master the art of creating eye-catching thumbnails for your content.</p>
+            <h3>Pricing Plans</h3>
+            <ul>
+                <li><strong>Basic:</strong> €5 - Simple design with text</li>
+                <li><strong>Pro:</strong> €10 - Custom design with images</li>
+                <li><strong>Premium:</strong> €15 - Fully custom thumbnails with advanced design</li>
+            </ul>
+            <h3>What You'll Learn:</h3>
+            <ul>
+                <li>Best practices for designing thumbnails</li>
+                <li>Using text and images effectively</li>
+                <li>Creating clickable thumbnails</li>
+                <li>Tools for advanced thumbnail creation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="editing-tutorials-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('editing-tutorials')">&times;</span>
+            <h2>Editing Tutorials</h2>
+            <p>Learn video editing techniques from beginner to advanced levels.</p>
+            <h3>Pricing Plans</h3>
+            <ul>
+                <li><strong>Basic:</strong> €10 - Beginner techniques | 1 class/50min</li>
+                <li><strong>Pro:</strong> €20 - Intermediate techniques | 3 classes/60min each</li>
+                <li><strong>Premium:</strong> €30  - Advanced editing skills | 10classes/60min each </li>
+            </ul>
+            <h3>What You'll Learn:</h3>
+            <ul>
+                <li>Video cutting and trimming</li>
+                <li>Using advanced transitions</li>
+                <li>Sound editing and mixing</li>
+                <li>Creating professional effects and animations</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="thumbnail-workshops-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('thumbnail-workshops')">&times;</span>
+            <h2>Thumbnail Tutorial</h2>
+            <p>Master the art of creating captivating thumbnails.</p>
+            <h3>Pricing Plans</h3>
+            <ul>
+                <li><strong>Basic:</strong> €10 - Introduction to thumbnail design | 1class/50min</li>
+                <li><strong>Pro:</strong> €20 - Creating professional thumbnails | 3classes/50min</li>
+                <li><strong>Premium:</strong> €30 - Advanced techniques and custom thumbnails | 5 classes/60min each</li>
+            </ul>
+            <h3>What You'll Learn:</h3>
+            <ul>
+                <li>Effective use of color and contrast</li>
+                <li>Thumbnail layout and design principles</li>
+                <li>Adding custom elements to thumbnails</li>
+                <li>Optimizing thumbnails for better engagement</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VideoSkill. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
